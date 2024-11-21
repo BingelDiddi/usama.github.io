@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #eef1f5, #d4e4ff);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            font-size: 50px;
+            color: #007bff;
+        }
+
+        .header p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #007bff;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #007bff;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: #007bff;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Smooth Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media(max-width: 768px) {
+            .card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        Usama's Portfolio
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to Usama's Portfolio</h1>
+        <p>I'm a Front-End Developer and Software Engineering Student</p>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm passionate about creating beautiful, functional, and user-friendly websites.
+            I specialize in front-end development and love experimenting with new technologies.
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section" id="skills">
+        <h2>My Skills</h2>
+        <div class="card">
+            <h3>Front-End Development</h3>
+            <p>HTML, CSS, JavaScript,</p>
+        </div>
+        <div class="card">
+            <h3>Software Engineering</h3>
+            <p>Object-Oriented Design, Data Structures, Algorithms</p>
+        </div>
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Visual Studio Code, Git, Figma</p>
+        </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div class="section" id="hobbies">
+        <h2>My Hobbies</h2>
+        <p>When I'm not coding, I enjoy:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li> Designing Graphics</li>
+            <li> Reading Tech Blogs</li>
+            <li> Playing Basketball</li>
+        </ul>
+    </div>
+
+    <!-- Certificates Section -->
+    <div class="section" id="certificates">
+        <h2>My Certificates</h2>
+        <p>Here are some of the certificates I've earned:</p>
+        <div class="card">
+            <h3>Front-End Development Certificate</h3>
+            <p>Issued by [Institution]</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript Specialist</h3>
+            <p>Issued by [Institution]</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <strong>usamaladansunkani@gmail.com</strong></p>
+        <p>Phone: <strong>+234 8037707601</strong></p>
+        <p>Address: <strong>No 32 Imo Crescent Area 1 Section 1 Garki Abuja
+        </strong></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
